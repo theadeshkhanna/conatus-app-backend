@@ -2,7 +2,9 @@
 
 namespace App\Api\V1\Controllers;
 
+use App\Jobs\SendConfirmationEmailJob;
 use App\Services\Entities\RegistrationService;
+use RegistrationCreateRequest;
 
 class RegistrationController extends BaseController {
     protected $registrationService;
@@ -11,7 +13,8 @@ class RegistrationController extends BaseController {
         $this->registrationService = new RegistrationService();
     }
 
-    public function create() {
-        return $this->registrationService->createRegistration();
+    public function create(RegistrationCreateRequest $request) {
+        $participant = $this->registrationService->createRegistration($request);
+        $this->dispatch(new SendConfirmationEmailJob($participant));
     }
 }

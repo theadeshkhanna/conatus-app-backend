@@ -24,6 +24,55 @@ class RegistrationCreateRequest extends BaseRequest implements RegistrationCreat
            self::BRANCH_2 => 'required|valid_branch_types',
            self::STUDENT_NUMBER_1 => 'required',
            self::STUDENT_NUMBER_2 => 'required',
+           self::YEAR_1 => 'required',
+           self::YEAR_2 => 'required',
+           self::EMAIL_1 => 'required|email',
+           self::EMAIL_2 => 'required|email',
+           self::TEAM_NAME => 'required'
         ];
+    }
+
+    public function getName1() {
+        return $this->get(self::NAME_1);
+    }
+
+    public function getName2() {
+        return $this->get(self::NAME_2);
+    }
+
+    public function getBranch1() {
+        return $this->get(self::BRANCH_1);
+    }
+
+    public function getBranch2() {
+        return $this->get(self::BRANCH_2);
+    }
+
+    public function getStudentNumber1() {
+        return $this->get(self::STUDENT_NUMBER_1);
+    }
+
+    public function getStudentNumber2() {
+        return $this->get(self::STUDENT_NUMBER_2);
+    }
+
+    public function getYear1() {
+        return $this->get(self::YEAR_1);
+    }
+
+    public function getYear2() {
+        return $this->get(self::YEAR_2);
+    }
+
+    public function getEmail1() {
+        return $this->get(self::EMAIL_1);
+    }
+
+    public function getEmail2() {
+        return $this->get(self::EMAIL_2);
+    }
+
+    public function getTeamName() {
+        return $this->get(self::TEAM_NAME);
     }
 }

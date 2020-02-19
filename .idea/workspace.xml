@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd11e2a-1d03-4fd5-9e4d-150bbc77efd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Api/V1/Requests/RegistrationCreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Contracts/RegistrationCreateContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Team.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/SendConfirmationEmailJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Participant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Api/V1/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Api/V1/Controllers/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Api/V1/Requests/RegistrationCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Api/V1/Requests/RegistrationCreateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Entities/RegistrationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Entities/RegistrationService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +133,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../devslane-erp" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -160,7 +154,9 @@
       <updated>1581270794266</updated>
       <workItem from="1581270796405" duration="3453000" />
       <workItem from="1581277618006" duration="301000" />
-      <workItem from="1581845991277" duration="732000" />
+      <workItem from="1581845991277" duration="1120000" />
+      <workItem from="1582112617405" duration="11000" />
+      <workItem from="1582141325909" duration="1358000" />
     </task>
     <servers />
   </component>
@@ -172,18 +168,22 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="639" y="24" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1581846306788" />
-    <state x="780" y="297" key="FileChooserDialogImpl" timestamp="1581271489272">
+    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl" timestamp="1582142651184">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1581271489272" />
-    <state x="793" y="465" key="NewPhpFileDialog" timestamp="1581846144706">
+    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1582142651184" />
+    <state x="793" y="465" key="NewPhpFileDialog" timestamp="1582142681948">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="793" y="465" key="NewPhpFileDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1581846144706" />
+    <state x="793" y="465" key="NewPhpFileDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582142681948" />
     <state x="638" y="249" width="709" height="578" key="find.popup" timestamp="1581846342835">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="638" y="249" width="709" height="578" key="find.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1581846342835" />
+    <state x="655" y="246" key="run.anything.popup" timestamp="1581846840471">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="655" y="246" key="run.anything.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1581846840471" />
     <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1581846637098">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
