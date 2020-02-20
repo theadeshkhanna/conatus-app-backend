@@ -11,8 +11,7 @@ use Illuminate\Queue\SerializesModels;
 class SendConfirmationEmailJob implements ShouldQueue {
     use InteractsWithQueue, Queueable, SerializesModels;
 
-    protected $user;
-    protected $token;
+    protected $participant;
 
     /**
      * Create a new job instance.
@@ -20,8 +19,8 @@ class SendConfirmationEmailJob implements ShouldQueue {
      *
      *
      */
-    public function __construct() {
-
+    public function __construct($participant) {
+        $this->participant = $participant;
     }
 
     /**
@@ -31,5 +30,6 @@ class SendConfirmationEmailJob implements ShouldQueue {
      */
     public function handle()
     {
+
     }
 }

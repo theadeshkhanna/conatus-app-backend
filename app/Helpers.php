@@ -18,6 +18,40 @@ class Helpers {
         }
 
         return $val;
+    }
 
+    public static function generateStoneValue($participant) {
+
+        $team_id = $participant->team_id;
+        $team = Team::find($team_id);
+        $stone = $team->stone;
+
+        switch ($stone) {
+            case 1 : return 'Igni';
+                     break;
+            case 2 : return 'Quen';
+                     break;
+            case 3 : return 'Axii';
+                     break;
+            case 4 : return 'Aard';
+                     break;
+        }
+    }
+
+    public static function generateStone() {
+        $recent_stone = Db::table('teams')->latest('created_at')->first();
+
+        if ($recent_stone) {
+            $stone = $recent_stone->stone;
+            if($stone < 4) {
+                $val = ++$stone;
+            } else {
+                $val = 1;
+            }
+        } else {
+            $val = 1;
+        }
+
+        return $val;
     }
 }

@@ -13,7 +13,7 @@ class RegistrationService {
         $team = new Team();
         $team->team_name = $contract->getTeamName();
         $team->generated_id = Helpers::generateTeamId();
-        $team->stone = 1;
+        $team->stone = Helpers::generateStone();
         $team->save();
 
         $participant = new Participant();
