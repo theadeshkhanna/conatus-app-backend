@@ -10,27 +10,38 @@ use App\Team;
 class RegistrationService {
 
     public function createRegistration(RegistrationCreateContract $contract) {
+
+        $participants = array();
+
         $team = new Team();
         $team->team_name = $contract->getTeamName();
         $team->generated_id = Helpers::generateTeamId();
         $team->stone = Helpers::generateStone();
         $team->save();
 
-        $participant = new Participant();
-        $participant->name_1 = $contract->getName1();
-        $participant->name_2 = $contract->getName2();
-        $participant->branch_1 = $contract->getBranch1();
-        $participant->branch_2 = $contract->getBranch2();
-        $participant->student_number_1 = $contract->getStudentNumber1();
-        $participant->student_number_2 = $contract->getStudentNumber2();
-        $participant->year_1 = $contract->getYear1();
-        $participant->year_2 = $contract->getYear2();
-        $participant->email_1 = $contract->getEmail1();
-        $participant->email_2 = $contract->getEmail2();
-        $participant->team_id = $team->id;
+        $participant_1 = new Participant();
+        $participant_1->name = $contract->getName1();
+        $participant_1->branch = $contract->getBranch1();
+        $participant_1->student_number = $contract->getStudentNumber1();
+        $participant_1->year = $contract->getYear1();
+        $participant_1->email = $contract->getEmail1();
+        $participant_1->team_id = $team->id;
+        $participant_1->save();
 
-        $participant->save();
+        $participant_2 = new Participant();
+        $participant_2->name = $contract->getName2();
+        $participant_2->branch = $contract->getBranch2();
+        $participant_2->student_number = $contract->getStudentNumber2();
+        $participant_2->year = $contract->getYear2();
+        $participant_2->email = $contract->getEmail2();
+        $participant_2->team_id = $team->id;
+        $participant_2->save();
 
-        return $participant;
+        array_push($participants, [
+            'participant_1' => $participant_1,
+            'participant_2' => $participant_2
+        ]);
+
+        return $participants;
     }
 }

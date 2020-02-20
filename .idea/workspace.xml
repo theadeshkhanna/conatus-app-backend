@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd11e2a-1d03-4fd5-9e4d-150bbc77efd5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/Assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/email/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Api/V1/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Api/V1/Controllers/RegistrationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/SendConfirmationEmailJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/SendConfirmationEmailJob.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/Entities/RegistrationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Entities/RegistrationService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_16_094610_create_participants_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_16_094610_create_participants_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +135,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../devslane-erp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../new.vaetas.com" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -160,7 +164,8 @@
       <workItem from="1581845991277" duration="1120000" />
       <workItem from="1582112617405" duration="11000" />
       <workItem from="1582141325909" duration="1499000" />
-      <workItem from="1582214936419" duration="4594000" />
+      <workItem from="1582214936419" duration="8124000" />
+      <workItem from="1582225020454" duration="2173000" />
     </task>
     <servers />
   </component>
@@ -172,14 +177,14 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="639" y="24" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1581846306788" />
-    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl" timestamp="1582216407134">
+    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl" timestamp="1582227192142">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1582216407134" />
-    <state x="793" y="465" key="NewPhpFileDialog" timestamp="1582142681948">
+    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1582227192142" />
+    <state x="793" y="465" key="NewPhpFileDialog" timestamp="1582221690718">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="793" y="465" key="NewPhpFileDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582142681948" />
+    <state x="793" y="465" key="NewPhpFileDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582221690718" />
     <state x="638" y="249" width="709" height="578" key="find.popup" timestamp="1581846342835">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>

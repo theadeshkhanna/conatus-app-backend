@@ -15,11 +15,11 @@ class RegistrationController extends BaseController {
     }
 
     public function create(RegistrationCreateRequest $request) {
-        $participant = $this->registrationService->createRegistration($request);
-        $this->dispatch(new SendConfirmationEmailJob($participant));
+        $participants = $this->registrationService->createRegistration($request);
+        $this->dispatch(new SendConfirmationEmailJob($participants));
         return [
-            'participant' => $participant,
-            'stone'       => Helpers::generateStoneValue($participant)
+            'participants' => $participants,
+            'stone'       => Helpers::generateStoneValue($participants)
         ];
     }
 }

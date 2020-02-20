@@ -20,9 +20,8 @@ class Helpers {
         return $val;
     }
 
-    public static function generateStoneValue($participant) {
-
-        $team_id = $participant->team_id;
+    public static function generateStoneValue($participants) {
+        $team_id = $participants[0]['participant_1']->team_id;
         $team = Team::find($team_id);
         $stone = $team->stone;
 

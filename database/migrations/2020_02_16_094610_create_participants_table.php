@@ -15,16 +15,11 @@ class CreateParticipantsTable extends Migration
     {
         Schema::create('participants', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name_1');
-            $table->string('name_2');
-            $table->string('branch_1');
-            $table->string('branch_2');
-            $table->string('student_number_1');
-            $table->string('student_number_2');
-            $table->string('year_1');
-            $table->string('year_2');
-            $table->string('email_1');
-            $table->string('email_2');
+            $table->string('name');
+            $table->string('branch');
+            $table->string('student_number');
+            $table->string('year');
+            $table->string('email');
             $table->unsignedBigInteger('team_id');
 
             $table->foreign('team_id')->references('id')->on('teams')->onDelete('cascade');
