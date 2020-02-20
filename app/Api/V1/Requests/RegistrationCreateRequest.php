@@ -1,6 +1,7 @@
 <?php
 
-use App\Api\V1\Requests\BaseRequest;
+namespace App\Api\V1\Requests;
+
 use App\Services\Contracts\RegistrationCreateContract;
 
 class RegistrationCreateRequest extends BaseRequest implements RegistrationCreateContract {
@@ -20,8 +21,8 @@ class RegistrationCreateRequest extends BaseRequest implements RegistrationCreat
         return [
            self::NAME_1 => 'required|string',
            self::NAME_2 => 'required|string',
-           self::BRANCH_1 => 'required|valid_branch_types', //TODO : need to write about validation
-           self::BRANCH_2 => 'required|valid_branch_types',
+           self::BRANCH_1 => 'required', //TODO : need to write about validation
+           self::BRANCH_2 => 'required',
            self::STUDENT_NUMBER_1 => 'required',
            self::STUDENT_NUMBER_2 => 'required',
            self::YEAR_1 => 'required',

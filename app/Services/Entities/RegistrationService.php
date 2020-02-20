@@ -4,8 +4,8 @@ namespace App\Services\Entities;
 
 use App\Participant;
 use App\Services\Contracts\RegistrationCreateContract;
+use App\Helpers;
 use App\Team;
-use Helpers;
 
 class RegistrationService {
 
@@ -13,7 +13,7 @@ class RegistrationService {
         $team = new Team();
         $team->team_name = $contract->getTeamName();
         $team->generated_id = Helpers::generateTeamId();
-        $team->stone = 'aegni';
+        $team->stone = 1;
         $team->save();
 
         $participant = new Participant();

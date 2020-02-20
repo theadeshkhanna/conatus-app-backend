@@ -16,8 +16,8 @@ class CreateTeamsTable extends Migration
         Schema::create('teams', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('team_name');
-            $table->string('generated_id');
-            $table->string('stone');
+            $table->string('generated_id')->unique();
+            $table->unsignedBigInteger('stone');
             $table->timestamps();
         });
     }
