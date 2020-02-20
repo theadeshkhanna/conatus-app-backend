@@ -112,7 +112,7 @@
                                 <tbody>
                                 <tr>
                                     <td width="180px">
-                                        <img src="../conatus-app-backend/resources/Assets/img/favicon.png"
+                                        <img src="../../Assets/img/favicon.png"
                                              width="150px" class="CToWUd">
                                     </td>
                                     <td>
@@ -132,7 +132,7 @@
                                         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                         valign="top">
                                         <br>
-                                        Hi {{}}!
+                                        Hi {{$name}}!
                                         <br><br>
                                         Your Team Have Successfully registered for COD: Conquest Of Dayne.
                                         <br> Following Details Should be with you when you arrive-
@@ -143,7 +143,7 @@
                                         itemtype="http://schema.org/HttpActionHandler"
                                         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                         valign="top">
-                                        <div style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; color: #FFF; text-decoration: none; line-height: 2em; font-weight: bold; text-align: center; display: inline-block; border-radius: 5px; text-transform: capitalize; background-color: #6cb6cf; margin: 0; border-color: #6cb6cf; border-style: solid; border-width: 10px 20px;">Team Id : {{}}<br>Starting Stone : {{}}</div>
+                                        <div style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; color: #FFF; text-decoration: none; line-height: 2em; font-weight: bold; text-align: center; display: inline-block; border-radius: 5px; text-transform: capitalize; background-color: #6cb6cf; margin: 0; border-color: #6cb6cf; border-style: solid; border-width: 10px 20px;">Team Id : {{$team_id}}<br>Starting Stone : {{$stone}}</div>
                                     </td>
                                 </tr>
                                 <td class="content-block"

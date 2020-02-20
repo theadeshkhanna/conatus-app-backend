@@ -46,7 +46,7 @@ class SendConfirmationEmailJob implements ShouldQueue {
                 'name' => $this->participants[$i]['participant_' . ($i+1)]->name
             ];
 
-            Mail::send('register.blade.php', $data, function ($message) use ($emailHeaders){
+            Mail::send('email.register', $data, function ($message) use ($emailHeaders){
                 $message->to($emailHeaders['email'], $emailHeaders['name'])->subject('COD Registration Confirmation');
             });
         }
