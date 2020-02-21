@@ -112,7 +112,7 @@
                                 <tbody>
                                 <tr>
                                     <td width="180px">
-                                        <img src="../../Assets/img/favicon.png"
+                                        <img src="./public/favicon.png" alt="img"
                                              width="150px" class="CToWUd">
                                     </td>
                                     <td>
