@@ -116,8 +116,8 @@
                                              width="150px" class="CToWUd">
                                     </td>
                                     <td>
-                                        <div style="text-decoration:none;font-weight:normal;color:#aaa;font-family:Arial,Helvetica,sans-serif;font-size:20px;padding-left:5px">
-                                            <span class="il">Conquest</span> <span class="il">Of</span> Dayne
+                                        <div style="text-decoration:none;font-weight:bold;font-family:Arial,Helvetica,sans-serif;font-size:22px;padding-left:5px;">
+                                            <span class="il">Conquest</span> <span class="il">of</span> Dayne
                                         </div>
                                     </td>
                                 </tr>
@@ -134,8 +134,8 @@
                                         <br>
                                         Hi {{$name}}!
                                         <br><br>
-                                        Your Team Have Successfully registered for COD: Conquest Of Dayne.
-                                        <br> Following Details Should be with you when you arrive-
+                                        Your team is successfully registered for <b>COD: Conquest of Dayne.</b>
+                                        <br> Your details for the game are-
                                     </td>
                                 </tr>
                                 <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
@@ -150,7 +150,7 @@
                                     style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                     valign="top">
                                     See You On 3rd March<br>
-                                    Team Conatus
+                                    <b><i>Best wishes from Team Conatus!</i></b>
                                 </td>
                                 </tr>
                             </table>
