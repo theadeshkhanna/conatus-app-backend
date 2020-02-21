@@ -36,14 +36,14 @@ class SendConfirmationEmailJob implements ShouldQueue {
         for ($i = 0; $i < 2; $i++) {
 
             $data = [
-                'name' => $this->participants[$i]['participant_' . ($i+1)]->name,
+                'name' => $this->participants[0]['participant_' . ($i+1)]->name,
                 'stone' => Helpers::generateStoneValue($this->participants),
-                'team_id' => Team::find($this->participants[$i]['participant_' . ($i+1)]->team_id)->generated_id
+                'team_id' => Team::find($this->participants[0]['participant_' . ($i+1)]->team_id)->generated_id
             ];
 
             $emailHeaders = [
-                'email' => $this->participants[$i]['participant_' . ($i+1)]->email,
-                'name' => $this->participants[$i]['participant_' . ($i+1)]->name
+                'email' => $this->participants[0]['participant_' . ($i+1)]->email,
+                'name' => $this->participants[0]['participant_' . ($i+1)]->name
             ];
 
             Mail::send('email.register', $data, function ($message) use ($emailHeaders){

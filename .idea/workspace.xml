@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9cd11e2a-1d03-4fd5-9e4d-150bbc77efd5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Api/V1/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Api/V1/Controllers/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Api/V1/Requests/RegistrationCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Api/V1/Requests/RegistrationCreateRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Jobs/SendConfirmationEmailJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/SendConfirmationEmailJob.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/email/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scrolls_backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../devslane-erp" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -163,30 +165,46 @@
       <workItem from="1582112617405" duration="11000" />
       <workItem from="1582141325909" duration="1499000" />
       <workItem from="1582214936419" duration="8124000" />
-      <workItem from="1582225020454" duration="4324000" />
+      <workItem from="1582225020454" duration="4375000" />
+      <workItem from="1582268196321" duration="3844000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="639" y="24" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581846306788">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="639" y="24" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1581846306788" />
-    <state x="165" y="96" width="1655" height="884" key="DiffContextDialog" timestamp="1582229352114">
+    <state x="730" y="297" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582269725947">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="165" y="96" width="1655" height="884" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582229352114" />
-    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl" timestamp="1582229241827">
+    <state x="730" y="297" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582269725947" />
+    <state x="165" y="96" width="1655" height="884" key="DiffContextDialog" timestamp="1582268748181">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1582229241827" />
-    <state x="793" y="465" key="NewPhpFileDialog" timestamp="1582221690718">
+    <state x="165" y="96" width="1655" height="884" key="DiffContextDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582268748181" />
+    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl" timestamp="1582270653157">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="793" y="465" key="NewPhpFileDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582221690718" />
+    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1582270653157" />
+    <state x="793" y="465" key="NewPhpFileDialog" timestamp="1582270694817">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="793" y="465" key="NewPhpFileDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582270694817" />
     <state x="638" y="249" width="709" height="578" key="find.popup" timestamp="1581846342835">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -195,9 +213,9 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="655" y="246" key="run.anything.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1581846840471" />
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1582228301031">
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1582270643037">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1582228301031" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1582270643037" />
   </component>
 </project>

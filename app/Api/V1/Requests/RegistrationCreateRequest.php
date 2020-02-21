@@ -21,12 +21,12 @@ class RegistrationCreateRequest extends BaseRequest implements RegistrationCreat
         return [
            self::NAME_1 => 'required|string',
            self::NAME_2 => 'required|string',
-           self::BRANCH_1 => 'required', //TODO : need to write about validation
-           self::BRANCH_2 => 'required',
+           self::BRANCH_1 => 'required|in:CSE,IT,CE,EN,ECE,ME,CS/IT,CS,EI',
+           self::BRANCH_2 => 'required|in:CSE,IT,CE,EN,ECE,ME,CS/IT,CS,EI',
            self::STUDENT_NUMBER_1 => 'required',
            self::STUDENT_NUMBER_2 => 'required',
-           self::YEAR_1 => 'required',
-           self::YEAR_2 => 'required',
+           self::YEAR_1 => 'required|in:1,2,3,4',
+           self::YEAR_2 => 'required|in:1,2,3,4',
            self::EMAIL_1 => 'required|email',
            self::EMAIL_2 => 'required|email',
            self::TEAM_NAME => 'required'
