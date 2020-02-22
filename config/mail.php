@@ -1,6 +1,6 @@
 <?php
 
-const password = "//@@ra_chit##";
+const password = '"//@@ra_chit##"';
 
 return [
 
