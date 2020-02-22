@@ -111,14 +111,9 @@
                                    style="padding:5px; margin-bottom: 25px; border-bottom:#cecece 2px solid">
                                 <tbody>
                                 <tr>
-                                    <td width="180px">
-                                        <img src="./public/favicon.png" alt="img"
-                                             width="150px" class="CToWUd">
-                                    </td>
-                                    <td>
-                                        <div style="text-decoration:none;font-weight:bold;font-family:Arial,Helvetica,sans-serif;font-size:22px;padding-left:5px;">
-                                            <span class="il">Conquest</span> <span class="il">of</span> Dayne
-                                        </div>
+                                    <td width="980px" align="center">
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/conatus-app-a31ea.appspot.com/o/favicon.png?alt=media&token=d9e879ee-e424-4461-9d8b-8c3dbabfd82b" alt="img"
+                                             width="300px" class="CToWUd">
                                     </td>
                                 </tr>
                                 </tbody>
@@ -139,11 +134,11 @@
                                     </td>
                                 </tr>
                                 <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                    <td class="content-block" itemprop="handler" itemscope
+                                    <td align="center"class="content-block" itemprop="handler" itemscope
                                         itemtype="http://schema.org/HttpActionHandler"
                                         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                         valign="top">
-                                        <div style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; color: #FFF; text-decoration: none; line-height: 2em; font-weight: bold; text-align: center; display: inline-block; border-radius: 5px; text-transform: capitalize; background-color: #6cb6cf; margin: 0; border-color: #6cb6cf; border-style: solid; border-width: 10px 20px;">Team Id : {{$team_id}}<br>Starting Stone : {{$stone}}</div>
+                                        <div style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; color: #FFF; text-decoration: none; line-height: 2em; font-weight: bold; text-align: center; display: inline-block; border-radius: 5px; text-transform: capitalize; background-color: #000000; margin: 0; border-color: #000000; border-style: solid; border-width: 10px 20px;">Team Id : {{$team_id}}<br>Starting Stone : {{$stone}}</div>
                                     </td>
                                 </tr>
                                 <td class="content-block"
