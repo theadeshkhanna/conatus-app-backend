@@ -1,5 +1,7 @@
 <?php
 
+const password = "//@@ra_chit##";
+
 return [
 
     /*
@@ -86,7 +88,7 @@ return [
 
     'username' => env('MAIL_USERNAME', 'teamconatus@gmail.com'),
 
-    'password' => env('MAIL_PASSWORD', '"//@@ra_chit##"'),
+    'password' => env('MAIL_PASSWORD', password),
 
     /*
     |--------------------------------------------------------------------------
