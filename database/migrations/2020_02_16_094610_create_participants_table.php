@@ -20,7 +20,7 @@ class CreateParticipantsTable extends Migration
             $table->string('student_number')->unique();
             $table->string('year');
             $table->string('email')->unique();
-            $table->unsignedBigInteger('team_id');
+            $table->unsignedInteger('team_id');
 
             $table->foreign('team_id')->references('id')->on('teams')->onDelete('cascade');
             $table->timestamps();
