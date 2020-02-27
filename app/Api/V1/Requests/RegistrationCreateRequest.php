@@ -29,7 +29,7 @@ class RegistrationCreateRequest extends BaseRequest implements RegistrationCreat
            self::YEAR_2 => 'required|in:1,2,3,4',
            self::EMAIL_1 => 'required|email',
            self::EMAIL_2 => 'required|email',
-           self::TEAM_NAME => 'required'
+           self::TEAM_NAME => 'required|string'
         ];
     }
 

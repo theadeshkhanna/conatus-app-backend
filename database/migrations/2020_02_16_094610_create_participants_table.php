@@ -17,9 +17,9 @@ class CreateParticipantsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('branch');
-            $table->string('student_number')->unique();
+            $table->string('student_number');
             $table->string('year');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->unsignedInteger('team_id');
 
             $table->foreign('team_id')->references('id')->on('teams')->onDelete('cascade');

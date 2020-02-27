@@ -2,6 +2,7 @@
 
 namespace App\Services\Entities;
 
+use App\Api\V1\Exceptions\ParticipantExistsException;
 use App\Participant;
 use App\Services\Contracts\RegistrationCreateContract;
 use App\Helpers;
@@ -10,6 +11,17 @@ use App\Team;
 class RegistrationService {
 
     public function createRegistration(RegistrationCreateContract $contract) {
+
+        $participant = Participant::query()
+            ->where('email', '=',$contract->getEmail1())
+            ->orwhere('student_number', '=', $contract->getStudentNumber1())
+            ->orWhere('email', '=', $contract->getEmail2())
+            ->orWhere('student_number', '=',  $contract->getStudentNumber2())
+            ->first();
+
+        if($participant) {
+            throw new ParticipantExistsException();
+        }
 
         $participants = array();
 
