@@ -12,6 +12,7 @@ class StudentService {
         $student = Student::query()
             ->where('email', '=',$contract->getEmail())
             ->orwhere('student_number', '=', $contract->getStudentNumber())
+            ->orwhere('roll_number', '=', $contract->getRollNumber())
             ->first();
 
         if($student) {
