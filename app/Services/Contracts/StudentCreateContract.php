@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Services\Contracts;
+
 interface  StudentCreateContract {
     public function getName();
     public function getStudentNumber();

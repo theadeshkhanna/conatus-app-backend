@@ -2,7 +2,7 @@
 
 namespace App\Api\V1\Requests;
 
-use StudentCreateContract;
+use App\Services\Contracts\StudentCreateContract;
 
 class StudentCreateRequest extends BaseRequest implements StudentCreateContract {
     const NAME           = 'name';

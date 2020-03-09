@@ -9,4 +9,5 @@ $api->version('v1', function ($api) use ($basePath){
     $api->get('/', function () {
        return 'working';
     });
+    $api->post('create', $basePath . 'StudentController@createStudent');
 });

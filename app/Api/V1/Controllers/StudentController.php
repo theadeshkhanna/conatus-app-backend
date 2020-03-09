@@ -4,7 +4,7 @@ namespace App\Api\V1\Controllers;
 
 use App\Api\V1\Requests\StudentCreateRequest;
 use App\Api\V1\Transformers\StudentTransformer;
-use StudentService;
+use App\Services\Entities\StudentService;
 
 class StudentController extends BaseController {
     protected $studentService;
