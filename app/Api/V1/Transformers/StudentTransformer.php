@@ -15,7 +15,9 @@ class StudentTransformer extends TransformerAbstract {
             'roll_number'    => $student->roll_number,
             'student_number' => $student->student_number,
             'year'           => $student->year,
-            'branch'         => $student->branch
+            'branch'         => $student->branch,
+            'gender'         => $student->gender,
+            'hosteler/day-scholar' => $student->hosteler
         ];
     }
 }
