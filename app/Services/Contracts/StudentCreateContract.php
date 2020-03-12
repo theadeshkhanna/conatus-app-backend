@@ -9,6 +9,8 @@ interface  StudentCreateContract {
     public function getEmail();
     public function getPhoneNumber();
     public function getLanguage();
+    public function getGender();
+    public function getHosteler();
     public function getYear();
     public function getBranch();
 }

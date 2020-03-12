@@ -20,6 +20,8 @@ class CreateStudentsTable extends Migration
             $table->string('student_number');
             $table->string('year');
             $table->string('email');
+            $table->string('gender');
+            $table->string('hosteler');
             $table->string('roll_number');
             $table->string('language');
             $table->string('phone_number');

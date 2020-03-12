@@ -13,6 +13,8 @@ class StudentCreateRequest extends BaseRequest implements StudentCreateContract 
     const LANGUAGE       = 'language';
     const EMAIL          = 'email';
     const PHONE_NUMBER   = 'phone_number';
+    const GENDER         = 'gender';
+    const HOSTELER       = 'hosteler';
 
     public function rules() {
         return [
@@ -23,7 +25,9 @@ class StudentCreateRequest extends BaseRequest implements StudentCreateContract 
             self::BRANCH         =>  'required|in:CSE,IT,CE,EN,ECE,ME,CS/IT,CS,EI',
             self::LANGUAGE       => 'required|in:java,python',
             self::EMAIL          => 'required|email',
-            self::PHONE_NUMBER   => 'required|string'
+            self::PHONE_NUMBER   => 'required|string',
+            self::GENDER         => 'required|in:M,F',
+            self::HOSTELER       => 'required|in:hosteler,day-scholar'
         ];
     }
 
@@ -57,5 +61,13 @@ class StudentCreateRequest extends BaseRequest implements StudentCreateContract 
 
     public function getLanguage() {
         return $this->get(self::LANGUAGE);
+    }
+
+    public function getGender() {
+        return $this->get(self::GENDER);
+    }
+
+    public function getHosteler() {
+        return $this->get(self::HOSTELER);
     }
 }

@@ -29,6 +29,8 @@ class StudentService {
         $student->student_number = $contract->getStudentNumber();
         $student->language = $contract->getLanguage();
         $student->roll_number = $contract->getRollNumber();
+        $student->gender = $contract->getGender();
+        $student->hosteler = $contract->getHosteler();
 
         $student->save();
         return $student;
